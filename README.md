@@ -7,7 +7,7 @@ Here I have used python but we can use any language(like, C,C++,Java,etc.) to pe
 # Dependencies
 - `pip3 install -U numpy`
 - Use any toy dataset with simple one feature & label
--> Simply run the main.py
+- Simply run the main.py
 
 # Explanation
 This `Gradient Descent Algorithm` simply uses the one variable polynomial equation of straight line i.e., `Y = mx + b`
@@ -16,11 +16,11 @@ Here, m - slope of line
       
 ### Computing `Hypothesis` function:
 hypothesis() - computes predicted/hypothysed value of corresponding value of input feature (x), given by
-> h_{\theta}(x) = \theta_{0} + \theta_{1}.x
+> h<sub>&theta;</sub>(x) = &theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>
 
 ### Computing `Cost` or `Error` function:
 cost() - computes the totalError of the straight line which is calculated as `sum of squared error` by:
-> cost(\theta_{0}, \theta_{1}) = 1/2M \sum_{i=1}^{M} (h(x^(i) - y^(i))
+> cost(&theta;<sub>0</sub>, &theta;<sub>1</sub>) = 1/2M \sum<sub>i=1</sub><sup>M</sup> (h(x<sup>(i)</sup> - y<sup>(i)</sup>)
 corresponds to > cost(\theta_{0}, \theta_{1}) = /frac{1}{2M} * \sum_{i=1}^{M} ((\theta_{0} + \theta_{1}*x^(i)) - y^(i))
 
 ### Computing `GradientDescent`:
