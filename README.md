@@ -27,11 +27,11 @@ corresponds to
 
 ### Computing `GradientDescent`:
 #### To compute gradient descent we need to find the partial derivative of \theta_{0} and \theta_{1} respectively individually
--Formula to compute &theta<sub>0</sub>'s partial derivative 
-> &part / &part; &theta;<sub>0</sub> = 1 / M <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>)
+-Formula to compute &theta;<sub>0</sub>'s partial derivative 
+> &part; / &part; &theta;<sub>0</sub> = 1 / M <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>)
 
--Formula to compute \theta_{1}'s partial derivative 
-> &part; / &part; &theta;<sub>1</sub> = 1 / M <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0,/sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>) * x<sup>(i)</sup>
+-Formula to compute &theta;<sub>1</sub>'s partial derivative 
+> &part; / &part; &theta;<sub>1</sub> = 1 / M <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>) * x<sup>(i)</sup>
 ```
 while convergence:
   &theta;<sub>0</sub> = &theta;<sub>0</sub> - &alpha; * 1/M * <sup>M</sup>&sum;<sub>(i=1)((&theta
