@@ -40,4 +40,6 @@ corresponds to
        return [&theta;<sub>0</sub>, &theta;<sub>1</sub>]</pre></h5>
       
 #### epcohs is simply the number of iterations we want to make over the whole dataset repetatively.
-#### &alpha; is simply the learning rate of the gradient descent function.
+#### &alpha; is simply the learning rate of the gradient descent function (hyperparameter).
+
+###### * Hperparameter - parameters which indirectly affect the <u>rate of iterations</u> or <u>learning algorithm</u> over the dataset.
