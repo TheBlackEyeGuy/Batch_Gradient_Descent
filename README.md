@@ -27,11 +27,11 @@ corresponds to
 > __cost(&theta;<sub>0</sub>, &theta;<sub>1</sub>) = 1/2M * <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>)<sup>2</sup>__
 
 ### Computing `GradientDescent`:
-#### To compute gradient descent we need to find the partial derivative of \theta_{0} and \theta_{1} respectively individually
-- Formula to compute &theta;<sub>0</sub>'s partial derivative 
+#### To compute gradient descent we need to find the partial derivative of &theta;<sub>0</sub> and &theta;<sub>1</sub> individually
+- <u>Formula to compute &theta;<sub>0</sub>'s partial derivative </u>
 > &part; / &part; &theta;<sub>0</sub> = 1 / M <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>)
 
-- Formula to compute &theta;<sub>1</sub>'s partial derivative 
+- <u>Formula to compute &theta;<sub>1</sub>'s partial derivative </u>
 > &part; / &part; &theta;<sub>1</sub> = 1 / M <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>) * x<sup>(i)</sup>
 
 <h5><pre>while convergence:<br>
