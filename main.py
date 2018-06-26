@@ -4,7 +4,7 @@ def hypothesis(b,m,x):
 	predicted_y = (b + (m*x))
 	return predicted_y
 
-def J(b,m,points):
+def cost(b,m,points):
 	totalError = 0
 	M = float(len(points))
 	for i in range(len(points)):
@@ -44,7 +44,7 @@ def main():
 	print('Predicted price is : {}'.format(y))
 
 	print("Cost function's weights are b:{}, m:{}".format(new_b, new_m))
-	print("Total cost is : {}".format(J(new_b,new_m,np.array(points))))
+	print("Total cost is : {}".format(cost(new_b,new_m,np.array(points))))
 	
 if __name__ == '__main__':
 	main()
