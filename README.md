@@ -10,7 +10,8 @@ Here I have used python but we can use any language(like, C,C++,Java,etc.) to pe
 - Simply run the main.py
 
 # Explanation
-This `Gradient Descent Algorithm` simply uses the one variable polynomial equation of straight line i.e., `Y = &theta;<sub>0</sub> + &theta;<sub>1</sub> * x`
+This `Gradient Descent Algorithm` simply uses the one variable polynomial equation of straight line i.e.,
+> Y = &theta;<sub>0</sub> + &theta;<sub>1</sub> * x
 Here, 
 - &theta;<sub>1</sub> : slope of line
 - &theta;<sub>0</sub> : Y intercept of the line (i.e., From which Y-coodinate the line will pass)
@@ -35,8 +36,8 @@ corresponds to
 
 <h5>while convergence:
   &theta;<sub>0</sub> = &theta;<sub>0</sub> - &alpha; * 1/M * <sup>M</sup>&sum;<sub>(i=1)((&theta
-  ;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>)
-  &theta;<sub>1</sub> = &theta;<sub>1</sub> - &alpha; * 1/M * <sup>M</sup>&sum;<sub>(i=1)</sub>&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>) * x<sup>(i)<sup>
+  ;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>)<br>
+  &theta;<sub>1</sub> = &theta;<sub>1</sub> - &alpha; * 1/M * <sup>M</sup>&sum;<sub>(i=1)</sub>&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>) * x<sup>(i)<sup><br>
   return [&theta;<sub>0</sub>, &theta;<sub>1</sub>]</h5>
       
 #### epcohs is simply the number of iterations we want to make over the whole dataset repetatively.
