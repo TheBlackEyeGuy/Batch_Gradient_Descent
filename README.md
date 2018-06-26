@@ -2,7 +2,7 @@
 
 # Overview
 It demostrates the batch gradient descent algorithm of machine learning for linear regression problems.
-Here I have used python but we can use any language(like, C,C++,Java,etc.) to perform the similar algorithm.
+Here I have used python but we can use any language(like- C,C++,Java,etc.) to perform the similar algorithm.
 
 # Dependencies
 - `pip3 install -U numpy`
