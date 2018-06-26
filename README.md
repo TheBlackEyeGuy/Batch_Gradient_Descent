@@ -27,17 +27,17 @@ corresponds to
 
 ### Computing `GradientDescent`:
 #### To compute gradient descent we need to find the partial derivative of \theta_{0} and \theta_{1} respectively individually
--Formula to compute &theta;<sub>0</sub>'s partial derivative 
+- Formula to compute &theta;<sub>0</sub>'s partial derivative 
 > &part; / &part; &theta;<sub>0</sub> = 1 / M <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>)
 
--Formula to compute &theta;<sub>1</sub>'s partial derivative 
+- Formula to compute &theta;<sub>1</sub>'s partial derivative 
 > &part; / &part; &theta;<sub>1</sub> = 1 / M <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>) * x<sup>(i)</sup>
-```
-while convergence:
+
+<h5>while convergence:
   &theta;<sub>0</sub> = &theta;<sub>0</sub> - &alpha; * 1/M * <sup>M</sup>&sum;<sub>(i=1)((&theta
   ;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>)
   &theta;<sub>1</sub> = &theta;<sub>1</sub> - &alpha; * 1/M * <sup>M</sup>&sum;<sub>(i=1)</sub>&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>) * x<sup>(i)<sup>
-  return [&theta;<sub>0</sub>, &theta;<sub>1</sub>]
-```
+  return [&theta;<sub>0</sub>, &theta;<sub>1</sub>]</h5>
+      
 #### epcohs is simply the number of iterations we want to make over the whole dataset repetatively.
 #### &alpha; is simply the learning rate of the gradient descent function.
