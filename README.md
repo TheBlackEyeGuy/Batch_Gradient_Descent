@@ -14,14 +14,14 @@ This `Gradient Descent Algorithm` simply uses the one variable polynomial equati
 > Y = &theta;<sub>0</sub> + &theta;<sub>1</sub> * x
 
 - &theta;<sub>1</sub> : slope of line
-- &theta;<sub>0</sub> : Y intercept of the line (i.e., From which Y-coodinate the line will pass)
+- &theta;<sub>0</sub> : Y intercept of the line (i.e., From which Y-coordinate the line will pass)
       
 ### Computing `Hypothesis` function:
 **hypothesis()** - computes predicted/hypothysed value of corresponding value of input feature (x), given by
 > h<sub>&theta;</sub>(x) = &theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>
 
 ### Computing `Cost` or `Error` function:
-**cost()** - computes the totalError of the straight line which is calculated as `sum of squared error` by:
+**cost()** - computes the totalError of the straight line which is calculated as **`sum of squared error`** by:
 > cost(&theta;<sub>0</sub>, &theta;<sub>1</sub>) = 1/2M <sup>M</sup>&sum;<sub>(i=1)</sub> (h(x<sup>(i)</sup>) - y<sup>(i)</sup>)<sup>2</sup>
 corresponds to
 > __cost(&theta;<sub>0</sub>, &theta;<sub>1</sub>) = 1/2M * <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>)<sup>2</sup>__
