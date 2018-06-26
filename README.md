@@ -22,17 +22,17 @@ This `Gradient Descent Algorithm` simply uses the one variable polynomial equati
 
 ### Computing `Cost` or `Error` function:
 **cost()** - computes the totalError of the straight line which is calculated as **`sum of squared error`** by:
-> cost(&theta;<sub>0</sub>, &theta;<sub>1</sub>) = 1/2M <sup>M</sup>&sum;<sub>(i=1)</sub> (h(x<sup>(i)</sup>) - y<sup>(i)</sup>)<sup>2</sup>
+> cost(&theta;<sub>0</sub>, &theta;<sub>1</sub>) = 1/2M * <sup>M</sup>&sum;<sub>(i=1)</sub> (h(x<sup>(i)</sup>) - y<sup>(i)</sup>)<sup>2</sup>
 corresponds to
 > __cost(&theta;<sub>0</sub>, &theta;<sub>1</sub>) = 1/2M * <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>)<sup>2</sup>__
 
 ### Computing `GradientDescent`:
 #### To compute gradient descent we need to find the partial derivative of &theta;<sub>0</sub> and &theta;<sub>1</sub> individually
 - <u>Formula to compute &theta;<sub>0</sub>'s partial derivative </u>
-> &part; / &part; &theta;<sub>0</sub> = 1 / M <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>)
+> &part; / &part; &theta;<sub>0</sub> = 1 / M * <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>)
 
 - <u>Formula to compute &theta;<sub>1</sub>'s partial derivative </u>
-> &part; / &part; &theta;<sub>1</sub> = 1 / M <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>) * x<sup>(i)</sup>
+> &part; / &part; &theta;<sub>1</sub> = 1 / M * <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>) * x<sup>(i)</sup>
 
 <h5><pre>while convergence:<br>
        &theta;<sub>0</sub> = &theta;<sub>0</sub> - &alpha; * 1/M * <sup>M</sup>&sum;<sub>(i=1)</sub> ((&theta;<sub>0</sub> + &theta;<sub>1</sub> * x<sup>(i)</sup>) - y<sup>(i)</sup>)<br>
