@@ -32,7 +32,7 @@ def main():
 	alpha = 0.0008
 	epochs = 1000
 	points = np.genfromtxt('data.csv', delimiter=',')
-	[new_b, new_m] = gradient_descent(b, m, np.array(points), alpha, epochs)
+	[new_b, new_m] = gradient_descent(b, m, np.asarray(points), alpha, epochs)
 	x = float(input("Enter X value to predict : "))
 	y = hypothesis(new_b,new_m,x)
 	print('Predicted price is : {}'.format(y))
